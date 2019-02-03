@@ -1,0 +1,547 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../images/black.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-image h1 {
+  align-self: center;
+  font-family: "Lato", san-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #f8f8ff;
+}
+
+.hero-image h3 {
+  padding: 1em;
+  align-self: center;
+  font-family: "Lato", san-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: rgba(248, 248, 255, 0.9);
+}
+
+/* Common button styles */
+.about-button {
+  align-self: center;
+  background-color: transparent;
+  color: #f8f8ff;
+  border: 2px solid #f8f8ff;
+  /* Green */
+  width: 10em;
+  padding: 0.8em;
+  margin: 1em;
+  font-family: "Lato", san-serif;
+  font-size: 1em;
+}
+
+#arrow {
+  margin-left: 15px;
+  transform: translate(0, 0);
+}
+
+#arrow:hover {
+  transition: transform 0.3s;
+  position: absolute;
+  right: 15px;
+}
+
+.about-me {
+  font-family: "Lato", san-serif;
+  background-color: #f0f0f0;
+}
+
+.header {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-top: 3em;
+  padding-bottom: 0.25em;
+  color: #484848;
+  text-align: center;
+  font-size: 2.25em;
+}
+
+.header-bar {
+  width: 70px;
+  height: 4px;
+  background: #484848;
+  margin: 0 auto;
+  margin-bottom: 5em;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  z-index: 86;
+  background-image: linear-gradient(to bottom, #5c97ee, #4d8ce6, #3d81de, #2b76d5, #0d6bcd);
+}
+
+.circle i {
+  display: block;
+  text-align: center;
+  margin: 15px;
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.circle.filled {
+  background-color: #666666;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+}
+
+#icon-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 25px;
+}
+
+.skill-text {
+  color: #616161;
+  text-align: center;
+}
+
+.skill-header {
+  margin: 15px;
+}
+
+.about-me-paragraph {
+  display: flex;
+  justify-content: center;
+  padding: 3em;
+}
+
+.about-me-header {
+  padding-bottom: 15px;
+}
+
+.about-me-text {
+  color: #616161;
+  line-height: 1.8em;
+  width: 90%;
+}
+
+strong {
+  color: #0033ff;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-section {
+  width: 60%;
+}
+
+.languages,
+.frameworks {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.skills-header {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  /* To remove default bottom margin */
+  padding: 0;
+  /* To remove default left padding */
+  flex-direction: row;
+  display: flex;
+}
+
+li i {
+  font-size: 2.5em;
+  color: #616161;
+}
+
+.projects {
+  background-image: url("../images/project-image3-01.svg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 25px;
+  margin: 5px;
+  width: 420px;
+  height: 338px;
+  box-shadow: 10px 10px 20px -5px rgba(0, 0, 0, 0.2);
+}
+
+.wedding {
+  background-image: url(../images/wedding.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.react-app {
+  background-image: url(../images/react.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.yelp-camp {
+  background-image: url(../images/yelpcamp.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site-info {
+  opacity: 0;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.site-info:hover {
+  opacity: 1;
+}
+
+.info {
+  color: #8A2BE2;
+  font-family: "Lato", san-serif;
+  margin-top: 5px;
+}
+
+.site-header {
+  color: #484848;
+  font-family: "Lato", san-serif;
+}
+
+.learn-button {
+  align-self: center;
+  background-color: transparent;
+  color: #484848;
+  border: 2px solid #8A2BE2;
+  /* Green */
+  width: 10em;
+  padding: 0.8em;
+  margin: 1em;
+  font-family: "Lato", san-serif;
+  font-size: 1em;
+  margin: 55px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.learn-button:hover {
+  background-color: #8A2BE2;
+  color: #f0f0f0;
+}
+
+/* The Modal (background) */
+.modal, .modal-react {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content, .modal2-content, .modal3-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  /* 15% from the top and centered */
+  width: 40%;
+  /* Could be more or less, depending on screen size */
+  height: auto;
+}
+
+/* The Close Button */
+.close {
+  left: 31px;
+  float: right;
+  font-weight: bold;
+  position: relative;
+  font-size: 2.1em;
+  color: #484848;
+  background-color: transparent;
+  border: none;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.slider-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  bottom: 0;
+}
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+}
+.menu label:hover {
+  background: red;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s 0.75s;
+}
+
+[id^=slide]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+
+.slide-1 {
+  background-image: url("https://source.unsplash.com/t7YycgAoVSw/1600x900");
+}
+
+.slide-2 {
+  background-image: url("https://source.unsplash.com/11H1SSVcIxc/1600x900");
+}
+
+.slide-3 {
+  background-image: url("https://source.unsplash.com/OlZ1nWLEEgM/1600x900");
+}
+
+.mySlides, .weddingSlides, .ySlides {
+  width: 100%;
+  height: 50%;
+}
+
+.w3-display-right, .w3-display-left {
+  position: relative;
+  top: -45px;
+  font-size: 2.1em;
+  color: #f0f0f0;
+  background-color: #4848489c;
+  border: none;
+}
+
+.w3-display-left {
+  float: left;
+}
+
+.w3-display-right {
+  float: right;
+}
+
+.project-description, .project-sub-header, .project-header {
+  padding: 5px;
+}
+
+.project-info-container {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Lato", san-serif;
+  flex-direction: column;
+}
+
+.project-description {
+  color: #616161;
+  padding-bottom: 1em;
+  line-height: 1.3em;
+}
+
+.project-header {
+  color: #484848;
+}
+
+.project-sub-header {
+  font-size: 15px;
+  color: #48484873;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.project-button-container {
+  display: flex;
+}
+
+.project-button {
+  align-self: center;
+  border: 2px solid #8A2BE2;
+  /* Green */
+  width: 10em;
+  padding: 0.8em;
+  margin: 1em;
+  font-family: "Lato", san-serif;
+  font-size: 0.9em;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  background-color: #8A2BE2;
+  color: #f0f0f0;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-image h1 {
+    font-size: 1.3em;
+  }
+
+  .hero-image h3 {
+    font-size: 0.8em;
+  }
+
+  .about-button {
+    width: 8em;
+    padding: 0.6em;
+    font-size: 0.8em;
+  }
+
+  .project-button {
+    font-size: 0.8em;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .about-me-text {
+    width: 100%;
+  }
+
+  .about-me-paragraph {
+    flex-direction: column;
+  }
+
+  .gallery {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 97%;
+  }
+
+  .modal-content, .modal2-content, .modal3-content {
+    margin: 0 auto;
+    width: 100%;
+    height: 125%;
+  }
+
+  ul {
+    flex-wrap: wrap;
+  }
+
+  #icon-flex {
+    margin: 20px;
+  }
+
+  .close {
+    left: 30px;
+    top: 30px;
+  }
+
+  .skills-section {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 369px) {
+  #icon-flex {
+    margin: 12px;
+  }
+
+  .skills-section {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #icon-flex {
+    margin: 19px;
+  }
+
+  .card {
+    width: 90%;
+    margin: 1em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
