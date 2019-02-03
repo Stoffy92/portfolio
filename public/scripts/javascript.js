@@ -101,8 +101,9 @@ function showYDivs(numm) {
   ySlides[slideCampIndex-1].style.display = "block"; 
 }
 
-$('.about-button').click(function(){    
-  $('.about-me').animate({
-      scrollTop: 340
-  }, 1000);
-});
+
+
+function divScroll() {
+  var elmnt = document.getElementById("about-me");
+  elmnt.scrollIntoView();
+}

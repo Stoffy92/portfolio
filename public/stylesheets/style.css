@@ -8,6 +8,10 @@ html, body {
   overflow-x: hidden;
 }
 
+button {
+  cursor: pointer;
+}
+
 .hero-image {
   display: flex;
   justify-content: center;
@@ -36,18 +40,26 @@ html, body {
   color: rgba(248, 248, 255, 0.9);
 }
 
-/* Common button styles */
 .about-button {
   align-self: center;
   background-color: transparent;
   color: #f8f8ff;
   border: 2px solid #f8f8ff;
-  /* Green */
   width: 10em;
   padding: 0.8em;
   margin: 1em;
   font-family: "Lato", san-serif;
   font-size: 1em;
+}
+
+.about-button:hover {
+  background-color: #f8f8ff;
+  color: #484848;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 #arrow {
@@ -56,14 +68,17 @@ html, body {
 }
 
 #arrow:hover {
-  transition: transform 0.3s;
-  position: absolute;
-  right: 15px;
+  transform: rotate(90deg);
 }
 
 .about-me {
   font-family: "Lato", san-serif;
   background-color: #f0f0f0;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .header {
