@@ -101,9 +101,8 @@ function showYDivs(numm) {
   ySlides[slideCampIndex-1].style.display = "block"; 
 }
 
-
-
-function divScroll() {
-  var elmnt = document.getElementById("about-me");
-  elmnt.scrollIntoView();
-}
+$("#button").click(function() {
+  $('html, body').animate({
+      scrollTop: $("about-me").offset().top
+  }, 2000);
+});

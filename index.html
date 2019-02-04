@@ -42,12 +42,12 @@
 			<div class="hero-image">
 				<h1>Stefan Stoffberg</h1>
 				<h3>Web Developer</h3>
-				<button class="about-button" onclick="divScroll()">
+				<button class="about-button" id="button">
 					About Me<i id="arrow" class="fas fa-angle-right"></i>
 				</button>
 			</div>
 		</header>
-		<section class="about-me">
+		<section class="about-me" id="about-me">
 			<div class="container">
 				<h1 class="header" data-aos="fade-right">About</h1>
 				<div class="header-bar" data-aos="fade-left"></div>
@@ -144,15 +144,15 @@
 								<div class="project-images">
 									<img
 										class="weddingSlides"
-										src="https://source.unsplash.com/t7YycgAoVSw/1600x900"
+										src="./public/images/wedding-screenshot-1-01.svg"
 									/>
 									<img
 										class="weddingSlides"
-										src="https://source.unsplash.com/11H1SSVcIxc/1600x900"
+										src="./public/images/wedding-screenshot-2-01.svg"
 									/>
 									<img
 										class="weddingSlides"
-										src="https://source.unsplash.com/OlZ1nWLEEgM/1600x900"
+										src="./public/images/wedding-screenshot-3-01.svg"
 									/>
 									<button
 										class="w3-button w3-display-left"
@@ -206,15 +206,15 @@
 								<div class="project-images">
 									<img
 										class="mySlides"
-										src="https://source.unsplash.com/t7YycgAoVSw/1600x900"
+										src="./public/images/react-screenshot-1-01.svg"
 									/>
 									<img
 										class="mySlides"
-										src="https://source.unsplash.com/11H1SSVcIxc/1600x900"
+										src="./public/images/react-screenshot-2-01.svg"
 									/>
 									<img
 										class="mySlides"
-										src="https://source.unsplash.com/OlZ1nWLEEgM/1600x900"
+										src="./public/images/react-screenshot-3-01.svg"
 									/>
 									<button
 										class="w3-button w3-display-left"
@@ -267,15 +267,15 @@
 								<div class="project-images">
 									<img
 										class="ySlides"
-										src="https://source.unsplash.com/t7YycgAoVSw/1600x900"
+										src="./public/images/yelp-screenshot-1-01.svg"
 									/>
 									<img
 										class="ySlides"
-										src="https://source.unsplash.com/11H1SSVcIxc/1600x900"
+										src="./public/images/yelp-screenshot-2-01.svg"
 									/>
 									<img
 										class="ySlides"
-										src="https://source.unsplash.com/OlZ1nWLEEgM/1600x900"
+										src="./public/images/yelp-screenshot-3-01.svg"
 									/>
 									<button
 										class="w3-button w3-display-left"
@@ -305,7 +305,7 @@
 										<br />
 									</p>
 									<div class="project-button-container">
-										<button class="project-button" onclick=" window.open('','_blank')">View Site</button>
+										<button class="project-button" onclick=" window.open('https://yelp-camp-92.herokuapp.com/','_blank')">View Site</button>
 										<button class="project-button" onclick=" window.open('https://github.com/Stoffy92/YelpCamp','_blank')">View Code</button>
 									</div>
 								</div>
@@ -326,8 +326,7 @@
 			AOS.init();
 		</script>
 		<script src="" async defer></script>
-		
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="./public/scripts/javascript.js"></script>
 	</body>
 </html>
