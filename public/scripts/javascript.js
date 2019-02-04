@@ -43,14 +43,14 @@ window.onclick = function(event) {
 
 // TODO : Refactor Image Carousel
 
-var slideIndex = 1;
+var slideIndex = 1; // track current image
 showDivs(slideIndex);
 
-function plusDivs(n) {
+function plusDivs(n) { // change current image by increasing number
   showDivs(slideIndex += n);
 }
 
-function showDivs(n) {
+function showDivs(n) { // Slideshow images for ReactApp
   var i;
   var x = document.getElementsByClassName("mySlides");
   if (n > x.length) {slideIndex = 1} 
@@ -70,7 +70,7 @@ function plusWeddingDivs(num) {
   showWeddingDivs(slideWeddingIndex += num);
 }
 
-function showWeddingDivs(num) {
+function showWeddingDivs(num) { // Slideshow images for Wedding
   var w;
   var wSlides = document.getElementsByClassName("weddingSlides");
   if (num > wSlides.length) {slideWeddingIndex = 1} 
@@ -90,7 +90,7 @@ function plusYDivs(numm) {
   showYDivs(slideCampIndex += numm);
 }
 
-function showYDivs(numm) {
+function showYDivs(numm) { // Slideshow images for YelpCamp
   var y;
   var ySlides = document.getElementsByClassName("ySlides");
   if (numm > ySlides.length) {slideCampIndex = 1} 
@@ -101,8 +101,10 @@ function showYDivs(numm) {
   ySlides[slideCampIndex-1].style.display = "block"; 
 }
 
-$("#button").click(function() {
-  $('html, body').animate({
-      scrollTop: $("about-me").offset().top
-  }, 2000);
-});
+
+
+function smoothScroll () { // Scroll to div function
+  document.querySelector('.about-me').scrollIntoView({
+        behavior: 'smooth'
+      });
+  }

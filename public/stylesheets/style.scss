@@ -24,6 +24,10 @@ button {
   cursor:pointer;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 .hero-image {
 	display: flex;
