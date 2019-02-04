@@ -88,11 +88,6 @@ html {
   transform: rotate(90deg);
 }
 
-// section {
-//   display: flex;
-//   justify-content: center;
-//   font-family: $font-main;
-// }
 
 .about-me {
 	font-family: $font-main;
@@ -124,15 +119,6 @@ html {
 	margin-bottom: 5em;
 }
 
-// .header-bar {
-//   background: none repeat scroll 0 0 $grey;
-//   bottom: -10px;
-//   left: 25px;
-//   display: inline-block;
-//   height: 5px;
-//   position: relative;
-//   width: 50px;
-// }
 .circle {
 	border-radius: 50%;
 	width: 75px;
@@ -188,9 +174,6 @@ html {
 	padding: 3em;
 }
 
-// .about-me-section {
-//    width: 50%;
-// }
 
 .about-me-header {
 	padding-bottom: 15px;
@@ -219,7 +202,6 @@ strong {
 .frameworks {
 	display: flex;
 	flex-direction: column;
-	// align-items: center;
 	padding: 1em;
 }
 
@@ -313,7 +295,7 @@ li i {
   align-self: center;
 	background-color: transparent;
 	color: $grey;
-	border: 2px solid $purple; /* Green */
+	border: 2px solid $purple;
 	width: 10em;
 	padding: 0.8em;
 	margin: 1em;
@@ -421,15 +403,6 @@ li i {
   transition: left .65s ease-out;
 }
 
-.slide-1 {
-  background-image: url("https://source.unsplash.com/t7YycgAoVSw/1600x900");
-}
-.slide-2 {
-  background-image: url("https://source.unsplash.com/11H1SSVcIxc/1600x900");
-}
-.slide-3 {
-  background-image: url("https://source.unsplash.com/OlZ1nWLEEgM/1600x900");
-}
 
 .mySlides, .weddingSlides, .ySlides {
   width: 100%;
@@ -486,7 +459,7 @@ li i {
 }
 .project-button {
   align-self: center;
-	border: 2px solid $purple; /* Green */
+	border: 2px solid $purple; 
 	width: 10em;
 	padding: 0.8em;
 	margin: 1em;
@@ -503,7 +476,7 @@ li i {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) { // Medium & Large Screen
 	.hero-image h1 {
 		font-size: 1.3em;
 	}
@@ -566,7 +539,7 @@ li i {
 
 }
 
-@media only screen and (max-width: 369px) {
+@media only screen and (max-width: 369px) { // Small Phone Screen
 
   #icon-flex {
     margin: 12px;
@@ -578,7 +551,7 @@ li i {
 
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1024px) {
+@media only screen and (min-width: 700px) and (max-width: 1024px) { // Tablet 
   
   .gallery {
     flex-direction: column;
