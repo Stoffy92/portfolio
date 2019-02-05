@@ -419,16 +419,14 @@ li i {
 }
 
 .project-info-container {
-  display: flex;
-  justify-content: flex-start;
   font-family: "Lato", san-serif;
-  flex-direction: column;
 }
 
 .project-description {
   color: #616161;
   padding-bottom: 1em;
   line-height: 1.3em;
+  margin: 25px;
 }
 
 .project-header {
@@ -439,10 +437,12 @@ li i {
   font-size: 15px;
   color: #48484873;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: 2em;
 }
 
 .project-button-container {
   display: flex;
+  justify-content: center;
 }
 
 .project-button {

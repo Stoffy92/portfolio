@@ -431,15 +431,13 @@ li i {
 }
 
 .project-info-container {
-  display: flex;
-  justify-content: flex-start;
   font-family: $font-main;
-  flex-direction: column;
 }
 .project-description {
   color: $grey2;
   padding-bottom: 1em;
   line-height: 1.3em;
+  margin: 25px;
 }
 
 .project-header {
@@ -452,11 +450,14 @@ li i {
   font-size: 15px;
   color: $grey3;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: 2em;
 }
 
 .project-button-container {
   display: flex;
+  justify-content: center;
 }
+
 .project-button {
   align-self: center;
 	border: 2px solid $purple; 
