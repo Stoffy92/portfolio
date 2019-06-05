@@ -8,22 +8,19 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title></title>
+		<title>Stefan Stoffberg Portfolio</title>
 		<meta name="description" content="" />
 		<meta
 			name="viewport"
 			content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
 		/>
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
 		<link
 			rel="stylesheet"
 			type="text/css"
 			href="./public/stylesheets/style.css"
 		/>
-
 		<link
-			href="https://fonts.googleapis.com/css?family=Lato"
+			href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap"
 			rel="stylesheet"
 		/>
 		<link
@@ -40,38 +37,52 @@
 	<body>
 		<header>
 			<div class="hero-image">
-				<h1>Stefan Stoffberg</h1>
-				<h3>Web Developer</h3>
+				<h1 class="reveal-text">Stefan Stoffberg</h1>
+				<h3 class="reveal-text">Web Developer</h3>
 				<button class="about-button" id="button" onclick="smoothScroll()">
 					About Me<i id="arrow" class="fas fa-angle-right"></i>
 				</button>
+				<div class="about-me-section">
+					<h1 class="header">Who am I?</h1>
+					<div class="header-bar"></div>
+					<p>
+						I'm a laid back guy that's passionate about learning new
+						technologies and building elegant websites. I like to
+						<strong>resolve</strong> design problems,
+						<strong>create</strong> beautiful user-interfaces, and develop
+						lively web experiences & <strong>applications</strong>. When I'm not
+						working, or dabbling with code, I like to put my cooking skills to
+						the test while simultaneously trying not to burn down the kitchen
+						<em> or my food</em>
+					</p>
+				</div>
 			</div>
 		</header>
 		<section class="about-me" id="about-me">
 			<div class="container">
-				<h1 class="header">About</h1>
+				<h1 class="header-reveal">Skills</h1>
 				<div class="header-bar"></div>
 				<div class="skills">
-					<div id="icon-flex" class="fast">
+					<div id="icon-flex" class="fast first">
 						<div class="circle"><i class="fas fa-bolt"></i></div>
 						<h1 class="skill-header">Fast</h1>
 						<p class="skill-text">
 							Fast load times and lag free interaction, my highest priority.
 						</p>
 					</div>
-					<div id="icon-flex" class="fast">
+					<div id="icon-flex" class="fast second">
 						<div class="circle"><i class="far fa-images"></i></div>
 						<h1 class="skill-header">Responsive</h1>
 						<p class="skill-text">My layouts will work on all screen sizes</p>
 					</div>
-					<div id="icon-flex" class="fast">
+					<div id="icon-flex" class="fast third">
 						<div class="circle"><i class="far fa-lightbulb"></i></div>
 						<h1 class="skill-header">Intuitive</h1>
 						<p class="skill-text">
 							Strong preference for easy to use, intuitive UX/UI.
 						</p>
 					</div>
-					<div id="icon-flex" class="fast">
+					<div id="icon-flex" class="fast fourth">
 						<div class="circle"><i class="fas fa-random"></i></div>
 						<h1 class="skill-header">Dynamic</h1>
 						<p class="skill-text">
@@ -81,44 +92,33 @@
 					</div>
 				</div>
 				<div class="about-me-paragraph">
-					<div class="about-me-section">
-						<h1 class="about-me-header">- Hi, I'm Stefan <br /></h1>
-						<p class="about-me-text">
-							I'm a normal guy that's passionate about learning new technologies
-							and building elegant websites. I like to
-							<strong>resolve</strong> design problems,
-							<strong>create</strong> beautiful user-interfaces, and develop
-							lively web experiences & <strong>applications</strong>. When I'm
-							not working, or dabbling with code, I like to put my cooking
-							skills to the test while simultaneously trying not to burn down
-							the kitchen <em> or my food</em>
-						</p>
-					</div>
 					<div class="skills-section">
 						<div class="skills-container">
 							<div class="languages">
 								<h3>Langauges</h3>
 								<ul>
-									<li id="icon-flex">
+									<li id="icon-other">
 										<i class="fab fa-js-square"></i>JavaScript
 									</li>
-									<li id="icon-flex"><i class="fas fa-hashtag"></i>C#</li>
-									<li id="icon-flex"><i class="fab fa-css3-alt"></i>CSS</li>
-									<li id="icon-flex"><i class="fab fa-html5"></i>HTML</li>
-									<li id="icon-flex"><i class="fas fa-database"></i>SQL</li>
+									<li id="icon-other"><i class="fas fa-hashtag"></i>C#</li>
+									<li id="icon-other"><i class="fab fa-css3-alt"></i>CSS</li>
+									<li id="icon-other"><i class="fab fa-html5"></i>HTML</li>
+									<li id="icon-other"><i class="fas fa-database"></i>SQL</li>
 								</ul>
 							</div>
 							<div class="frameworks">
 								<h3>Libaries and Frameworks</h3>
 								<ul>
-									<li id="icon-flex"><i class="fab fa-react"></i>React.Js</li>
-									<li id="icon-flex"><i class="fab fa-node"></i>Node.Js</li>
-									<li id="icon-flex">
+									<li id="icon-other"><i class="fab fa-react"></i>React.Js</li>
+									<li id="icon-other"><i class="fab fa-node"></i>Node.Js</li>
+									<li id="icon-other">
 										<i class="fas fa-network-wired"></i>axios
 									</li>
-									<li id="icon-flex"><i class="fas fa-bold"></i>BootStrap</li>
-									<li id="icon-flex"><i class="fab fa-sass"></i>Sass</li>
-									<li id="icon-flex"><i class="fas fa-database"></i>MongoDB</li>
+									<li id="icon-other"><i class="fas fa-bold"></i>BootStrap</li>
+									<li id="icon-other"><i class="fab fa-sass"></i>Sass</li>
+									<li id="icon-other">
+										<i class="fas fa-database"></i>MongoDB
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -128,204 +128,135 @@
 		</section>
 		<section class="projects">
 			<div class="container projects">
-				<h1 class="header" data-aos="fade-left">Projects</h1>
-				<div class="header-bar" data-aos="fade-right"></div>
+				<h1 class="projects-header">Featured Work</h1>
+				<div class="header-bar"></div>
 				<div class="gallery">
-					<div class="wedding card">
-						<div class="site-info">
-							<h1 class="site-header">Wedding RSVP</h1>
-							<p class="info">Static Website</p>
-							<button id="myBtn" class="myBtn learn-button">Learn More</button>
+					<!-- The Modal -->
+
+					<!-- Modal content -->
+					<div class="modal-content" id="blair">
+						<div class="project-images">
+							<img
+								class="weddingSlides"
+								src="./public/images/wedding-screenshot-1-01.svg"
+							/>
 						</div>
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-							<!-- Modal content -->
-							<div class="modal-content">
-								<div class="project-images">
-									<img
-										class="weddingSlides"
-										src="./public/images/wedding-screenshot-1-01.svg"
-									/>
-									<img
-										class="weddingSlides"
-										src="./public/images/wedding-screenshot-2-01.svg"
-									/>
-									<img
-										class="weddingSlides"
-										src="./public/images/wedding-screenshot-3-01.svg"
-									/>
-									<button
-										class="w3-button w3-display-left"
-										onclick="plusWeddingDivs(-1)"
-									>
-										&#10094;
-									</button>
-									<button
-										class="w3-button w3-display-right"
-										onclick="plusWeddingDivs(+1)"
-									>
-										&#10095;
-									</button>
-									<button class="close">×</button>
-								</div>
-								<div class="project-info-container">
-									<h1 class="project-header">theblairwattsproject.com</h1>
-									<h3 class="project-sub-header">Wedding Info with RSVP</h3>
-									<p class="project-description">
-										<br />
-										A simple site that contains information for the client and
-										her guestlist. <br />
-										<br />
-										The website contains an RSVP form which allows those
-										attending to input all required information. With the use of
-										a Google script, the data is compiled and saved in an excel
-										sheet for easy accessibilty and is updated in real time
-										<br />
-										<br />
-										There is also a live countdown corresponding with the
-										wedding date
-									</p>
-									<div class="project-button-container">
-										<button class="project-button" onclick=" window.open('http://theblairwattsproject.com','_blank')">View Site</button>
-										<button class="project-button" onclick=" window.open('https://github.com/Stoffy92/blairproject','_blank')">View Code</button>
-									</div>
-								</div>
+						<div class="project-info-container">
+							<h1 class="project-header">theblairwattsproject.com</h1>
+							<h3 class="project-sub-header">Wedding Info with RSVP</h3>
+							<p class="project-description">
+								<br />
+								A simple site that contains information for the client and her
+								guestlist. <br />
+								<br />
+								The website contains an RSVP form which allows those attending
+								to input all required information. With the use of a Google
+								script, the data is compiled and saved in an excel sheet for
+								easy accessibilty and is updated in real times
+							</p>
+							<div class="project-button-container">
+								<button
+									class="site-button"
+									onclick=" window.open('http://theblairwattsproject.com','_blank')"
+								>
+									View Site
+								</button>
+								<button
+									class="git-button"
+									onclick=" window.open('https://github.com/Stoffy92/blairproject','_blank')"
+								>
+									View Code
+								</button>
 							</div>
 						</div>
 					</div>
-					<div class="react-app card">
-						<div class="site-info">
-							<h1 class="site-header">React App</h1>
-							<p class="info">React.js + axios</p>
-							<button id="myBtn" class="myBtn learn-button">Learn More</button>
+
+					<!-- The Modal -->
+
+					<!-- Modal content -->
+					<div class="modal-content" id="react">
+						<div class="project-images">
+							<img
+								class="mySlides"
+								src="./public/images/react-screenshot-1-01.svg"
+							/>
 						</div>
-						<!-- The Modal -->
-						<div id="myModal2" class="modal">
-							<!-- Modal content -->
-							<div class="modal2-content">
-								<div class="project-images">
-									<img
-										class="mySlides"
-										src="./public/images/react-screenshot-1-01.svg"
-									/>
-									<img
-										class="mySlides"
-										src="./public/images/react-screenshot-2-01.svg"
-									/>
-									<img
-										class="mySlides"
-										src="./public/images/react-screenshot-3-01.svg"
-									/>
-									<button
-										class="w3-button w3-display-left"
-										onclick="plusDivs(-1)"
-									>
-										&#10094;
-									</button>
-									<button
-										class="w3-button w3-display-right"
-										onclick="plusDivs(+1)"
-									>
-										&#10095;
-									</button>
-									<button class="close">×</button>
-								</div>
-								<div class="project-info-container">
-									<h1 class="project-header">React App</h1>
-									<h3 class="project-sub-header">
-										Netflix clone built using React.js.
-									</h3>
-									<p class="project-description">
-										<br />
-										Making use of React's powerful virtual DOM manipulation, a
-										simple search function was implemented. By typing in
-										keyphrases or letters, tv shows are filtered, and desired
-										results are shown almost instantly. Each movie/tv show has
-										it's own page showcasing the case and other titles that are
-										related. <br />
-										<br />
-										All data is retrieved from tMDB API
-									</p>
-									<div class="project-button-container">
-										<button class="project-button" onclick=" window.open('https://kind-hodgkin-adee94.netlify.com/','_blank')">View Site</button>
-										<button class="project-button" onclick=" window.open('https://github.com/Stoffy92/myapp','_blank')">View Code</button>
-									</div>
-								</div>
+						<div class="project-info-container">
+							<h1 class="project-header">React App</h1>
+							<h3 class="project-sub-header">
+								Netflix clone built using React.js.
+							</h3>
+							<p class="project-description">
+								<br />
+								Making use of React's powerful virtual DOM manipulation, a
+								simple search function was implemented. By typing in keyphrases
+								or letters, tv shows are filtered, and desired results are shown
+								almost instantly. Each movie/tv show has it's own page
+								showcasing the case and other titles that are related.
+								<br />
+								All data is retrieved from tMDB API
+							</p>
+							<div class="project-button-container">
+								<button
+									class="site-button"
+									onclick=" window.open('https://kind-hodgkin-adee94.netlify.com/','_blank')"
+								>
+									View Site
+								</button>
+								<button
+									class="git-button"
+									onclick=" window.open('https://github.com/Stoffy92/myapp','_blank')"
+								>
+									View Code
+								</button>
 							</div>
 						</div>
 					</div>
-					<div class="yelp-camp card">
-						<div class="site-info">
-							<h1 class="site-header">YelpCamp</h1>
-							<p class="info">JavaScript + Node.js + MongoDB</p>
-							<button id="myBtn" class="myBtn learn-button">Learn More</button>
+
+					<!-- The Modal -->
+
+					<!-- Modal content -->
+					<div class="modal-content" id="yelp">
+						<div class="project-images">
+							<img
+								class="ySlides"
+								src="./public/images/yelp-screenshot-1-01.svg"
+							/>
 						</div>
-						<!-- The Modal -->
-						<div id="myModal3" class="modal">
-							<!-- Modal content -->
-							<div class="modal3-content">
-								<div class="project-images">
-									<img
-										class="ySlides"
-										src="./public/images/yelp-screenshot-1-01.svg"
-									/>
-									<img
-										class="ySlides"
-										src="./public/images/yelp-screenshot-2-01.svg"
-									/>
-									<img
-										class="ySlides"
-										src="./public/images/yelp-screenshot-3-01.svg"
-									/>
-									<button
-										class="w3-button w3-display-left"
-										onclick="plusYDivs(-1)"
-									>
-										&#10094;
-									</button>
-									<button
-										class="w3-button w3-display-right"
-										onclick="plusYDivs(+1)"
-									>
-										&#10095;
-									</button>
-									<button class="close">×</button>
-								</div>
-								<div class="project-info-container">
-									<h1 class="project-header">YelpCamp</h1>
-									<h3 class="project-sub-header">Campsite Review</h3>
-									<p class="project-description">
-										<br />
-										A Fullstack web-app with full CRUD functionality. Users may
-										sign-up, post their favourite campsites with it's price per
-										night, location and more. Campsite owners have full
-										moderation over their own post, and have the option of
-										deleting unwanted comments. All data is stored with MongoDB
-										in conjuction with node.js in the backend <br />
-										<br />
-									</p>
-									<div class="project-button-container">
-										<button class="project-button" onclick=" window.open('https://yelp-camp-92.herokuapp.com/','_blank')">View Site</button>
-										<button class="project-button" onclick=" window.open('https://github.com/Stoffy92/YelpCamp','_blank')">View Code</button>
-									</div>
-								</div>
+						<div class="project-info-container">
+							<h1 class="project-header">YelpCamp</h1>
+							<h3 class="project-sub-header">Campsite Review</h3>
+							<p class="project-description">
+								<br />
+								A Fullstack web-app with full CRUD functionality. Users may
+								sign-up, post their favourite campsites with it's price per
+								night, location and more. Campsite owners have full moderation
+								over their own post, and have the option of deleting unwanted
+								comments. All data is stored with MongoDB in conjuction with
+								node.js in the backend
+							</p>
+							<div class="project-button-container">
+								<button
+									class="site-button"
+									onclick=" window.open('https://yelp-camp-92.herokuapp.com/','_blank')"
+								>
+									View Site
+								</button>
+								<button
+									class="git-button"
+									onclick=" window.open('https://github.com/Stoffy92/YelpCamp','_blank')"
+								>
+									View Code
+								</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!--[if lt IE 7]>
-			<p class="browsehappy">
-				You are using an <strong>outdated</strong> browser. Please
-				<a href="#">upgrade your browser</a> to improve your experience.
-			</p>
-		<![endif]-->
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>
-			AOS.init();
-		</script>
 		<script src="" async defer></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="./node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
 		<script src="./public/scripts/javascript.js"></script>
 	</body>
 </html>
