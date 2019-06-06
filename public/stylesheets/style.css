@@ -261,10 +261,6 @@ li i {
   color: #ff7979;
 }
 
-.projects {
-  height: 100vh;
-}
-
 .gallery {
   display: flex;
   justify-content: center;
